@@ -1,47 +1,86 @@
 import React from 'react';
 import './App.css';
+import styled from 'styled-components';
+import SecaoProdutos from './components/SecaoProdutos';
 
+const DivPai = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+`;
+
+const Filters = styled.div`
+    border: 2px solid black;
+    height: 57em;
+    width: 20em;
+    margin: 15px;
+    text-align: center;
+`;
+
+const Produtos = styled.div`
+    height: 57em;
+    width: 70em;
+    margin: 15px;
+    padding-left: 50px;
+
+    p{
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
+      margin-right: 70px;
+
+    }
+
+    select{
+      margin-left:950px;
+      border: 2px solid black;
+      width: 120px;
+      height: 30px;
+  }
+    
+`;
+const Carrinho = styled.div`
+    border: 2px solid black;
+    height: 57em;
+    width: 20em;
+    margin: 15px;
+    text-align: center; 
+`;
 
 class App extends React.Component {
   render(){
     return (
-      <div>
-        <div>
+      <DivPai>
+        <Filters>
           <h3>Filtros</h3>
-
           <label>Valor mínimo:</label>
           <input type="number" placeholder='0'/>
-
+          <br/>
           <label>Valor máximo:</label>
           <input type="number" placeholder='0'/>
-
+          <br/>
           <label>Procure pelo nome:</label>
           <input type="text" placeholder='Pesquisar'/>
-        </div>
+        </Filters>
         
         <div>
-          <div>
-            <h3>Quantidade de produtos:</h3>
-              <div>
-                <p>Ordenação:</p>
+          <Produtos>
+            <h2>Quantidade de produtos: 06</h2>
+            <h3> Produtos </h3>
+            <p>Ordenação:</p>
                 <select>
                   <option>Crescente</option>
                   <option>Decrescente</option>
                 </select>
-
-              </div>
-          </div>
-          <div>
-            <h2> Produtos </h2>
-          </div>
+            <SecaoProdutos/>
+          </Produtos>
         </div>
 
 
-        <div className='carrinho'>
+        <Carrinho>
           <h3>Carrinho:</h3>
-          <p>Valor total: R$0,00</p>
-        </div>
-      </div>
+          <label>Valor Total:R$ 00,00</label>
+        </Carrinho>
+      </DivPai>
       
     );
   }
