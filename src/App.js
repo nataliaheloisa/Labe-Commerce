@@ -1,26 +1,50 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  render(){
+    return (
+      <div>
+        <div>
+          <h3>Filtros</h3>
+
+          <label>Valor mínimo:</label>
+          <input type="number" placeholder='0'/>
+
+          <label>Valor máximo:</label>
+          <input type="number" placeholder='0'/>
+
+          <label>Procure pelo nome:</label>
+          <input type="text" placeholder='Pesquisar'/>
+        </div>
+        
+        <div>
+          <div>
+            <h3>Quantidade de produtos:</h3>
+              <div>
+                <p>Ordenação:</p>
+                <select>
+                  <option>Crescente</option>
+                  <option>Decrescente</option>
+                </select>
+
+              </div>
+          </div>
+          <div>
+            <h2> Produtos </h2>
+          </div>
+        </div>
+
+
+        <div className='carrinho'>
+          <h3>Carrinho:</h3>
+          <p>Valor total: R$0,00</p>
+        </div>
+      </div>
+      
+    );
+  }
 }
 
 export default App;
