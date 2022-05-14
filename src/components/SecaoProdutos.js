@@ -2,11 +2,25 @@ import React from 'react';
 import styled from 'styled-components';
 
 const CardContainer = styled.div`
-width: 200px;
 text-align: center;
+width: 100%;
+height: 80%;
+padding-top: 10px;
 display: flex;
+flex-wrap:wrap;
+align-items: center;
 flex-direction: column;
-border: 1px solid;
+box-shadow: 2px 2px 5px darkgray;
+border: 2px solid;
+
+button{
+    height: 35px;
+    background-color: white;
+    color: gray;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+
 `;
 
 class SecaoProdutos extends React.Component {
@@ -50,39 +64,34 @@ class SecaoProdutos extends React.Component {
         <CardContainer>
             <img src="https://i.picsum.photos/id/193/200/200.jpg?hmac=JHo5tWHSRWvVbL3HX6rwDNdkvYPFojLtXkEGEUCgz6A" />
             <p>
-                Viagem para Marte
-            </p>
-            <p>
+                Viagem para Marte <br/>
                 Preço R$ 200,00.
             </p>
+            <button>Adicionar ao Carrinho</button><hr/>
             <img src="https://i.picsum.photos/id/193/200/200.jpg?hmac=JHo5tWHSRWvVbL3HX6rwDNdkvYPFojLtXkEGEUCgz6A" />
             <p>
-                Viagem para Júpiter
-            </p>
-            <p>
+                Viagem para Júpiter<br/>
                 Preço R$ 3000,00.
             </p>
+            <button>Adicionar ao Carrinho</button><hr/>
             <img src="https://i.picsum.photos/id/193/200/200.jpg?hmac=JHo5tWHSRWvVbL3HX6rwDNdkvYPFojLtXkEGEUCgz6A" />
             <p>
-                 Viagem para Saturno
-            </p>
-            <p>
+                 Viagem para Saturno<br/>
                 Preço R$ 1500,00.
             </p>
+            <button>Adicionar ao Carrinho</button><hr/>
             <img src="https://i.picsum.photos/id/193/200/200.jpg?hmac=JHo5tWHSRWvVbL3HX6rwDNdkvYPFojLtXkEGEUCgz6A" />
             <p>
-                Viagem para Kleper B
-            </p>
-            <p>
+                Viagem para Kleper B<br/>
                 Preço R$ 2500,00.
             </p>
+            <button>Adicionar ao Carrinho</button><hr/>
             <img src="https://i.picsum.photos/id/193/200/200.jpg?hmac=JHo5tWHSRWvVbL3HX6rwDNdkvYPFojLtXkEGEUCgz6A" />
             <p>
-                Viagem Sagitário B
-            </p>
-            <p>
+                Viagem Sagitário B<br/>
                 Preço R$ 700,00.
             </p>
+            <button>Adicionar ao Carrinho</button><hr/>
         </CardContainer>
 
 );

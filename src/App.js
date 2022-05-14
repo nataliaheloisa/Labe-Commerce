@@ -9,6 +9,7 @@ const DivPai = styled.div`
 `;
 
 const Filters = styled.div`
+    border-radius: 5px;
     border: 2px solid black;
     height: 57em;
     width: 20em;
@@ -31,6 +32,7 @@ const Produtos = styled.div`
     }
 
     select{
+      border-radius: 5px;
       margin-left:950px;
       border: 2px solid black;
       width: 120px;
@@ -39,6 +41,7 @@ const Produtos = styled.div`
     
 `;
 const Carrinho = styled.div`
+    border-radius: 5px;
     border: 2px solid black;
     height: 57em;
     width: 20em;
