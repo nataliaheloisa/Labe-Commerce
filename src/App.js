@@ -64,7 +64,7 @@ class App extends React.Component {
         
         <div>
           <Produtos>
-            <h2>Quantidade de produtos: 06</h2>
+            <h2>Quantidade de produtos: 05</h2>
             <h3> Produtos </h3>
             <p>Ordenação:</p>
                 <select>
